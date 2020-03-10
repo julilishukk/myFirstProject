@@ -4,6 +4,7 @@
 require_once "../app/functions.php";
 
 echo "<a href='registr.html'>РЕЄСТРАЦІЯ НОВА</a>";
+echo "ураааа";
 
 
 
