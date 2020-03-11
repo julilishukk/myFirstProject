@@ -32,10 +32,12 @@ function check($login,$pas,$link){
 }
 
 
-function cnt_users($login){
+function cnt_users($login,$password){
+    $k=0;
   $link = connect();
   $ar = $link->query("select * from users where name='".$login."'")->fetchAll(2);
-  return count($ar);
+  if(count($ar)>0) {&k=1;&ar1 = $link->query("select * from users where name='".$login."' and password='".$password."' ")->fetchAll(2);}
+  return $k;
 }
 
 

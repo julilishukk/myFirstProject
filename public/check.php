@@ -2,4 +2,4 @@
 
 require_once "../app/functions.php";
 
-echo cnt_users($_GET['login']);
+echo cnt_users($_GET['login'],$_GET['password']);
